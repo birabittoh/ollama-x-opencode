@@ -21,8 +21,8 @@ services:
     ports:
       - "11434:11434"
     networks:
-      - ${DOCKER_NETWORK}
+      - ollama-net
 
 networks:
-  ${DOCKER_NETWORK}:
+  ollama-net:
     external: true
